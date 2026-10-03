@@ -6909,3 +6909,7 @@ CONFIG_PHY_QCOM_QUSB2=y
 CONFIG_QCOM_GPI=y
 CONFIG_MSM_GCC=y
 CONFIG_EXTCON_USB_GPIO=y
+# Huawei gaokun EC (embedded controller) + battery drivers (M1, from ec-driver-log)
+CONFIG_EC_HUAWEI_GAOKUN=y
+CONFIG_BATTERY_HUAWEI_GAOKUN=y
+# NOTE: CONFIG_UCSI_HUAWEI_GAOKUN must stay off until UCSI core porting (see docs/m1/ec-driver-log.md §5)
