@@ -463,7 +463,11 @@ CONFIG_RANDOMIZE_BASE=y
 # Boot options
 #
 CONFIG_CMDLINE=""
-# CONFIG_EFI is not set
+# EFI + EFISTUB: systemd-boot LoadImage() needs a PE/COFF (MZ) Image; on
+# arm64 EFI_STUB is an invisible symbol auto-selected by EFI, kept explicit
+# for documentation.
+CONFIG_EFI=y
+CONFIG_EFI_STUB=y
 # end of Boot options
 
 CONFIG_SYSVIPC_COMPAT=y
